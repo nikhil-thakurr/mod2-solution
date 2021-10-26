@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 6vh;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.container-1{
+    border: 3px solid black;
+    width: 30%;
+    background-color: gray;
+
+}
+.container-2{
+    border: 3px solid black;
+    width: 30%;
+    background-color: gray;
+
+}
+.container-3{
+    border: 3px solid black;
+    width: 30%;
+    background-color: gray;
+
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.container-1 h4{
+    float: right;
+    text-align: center;
+    padding: 4px 0px;
+    border: 2px solid black;
+    height: 20px;
+    width: 100px;
+    background-color: burlywood;
+}
+.container-2 h4{
+    float: right;
+    padding: 4px 0px;
+    text-align: center;
+    border: 2px solid black;
+    height: 20px;
+    color: white;
+    width: 100px;
+    background-color: rgb(197, 32, 32);
+}
+.container-3 h4{
+    float: right;
+    padding: 4px 0px;
+    text-align: center;
+    border: 2px solid black;
+    height: 20px;
+    width: 100px;
+    background-color: rgb(184, 119, 34);
+}
+
+
+.content{
+    clear: right;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+@media  screen and (max-width:991px){
+
+    .main-container{
+        display: inline;
+        justify-content: space-evenly;
+    }
+    .container-1,.container-2 {
+        width: 35%;
+        /* columns: 6; */
+        display: inline-block;
+        /* clear: right; */
+        text-align: center;
+        margin: 10px 40px;
+        
+    }
+    
+    
+    .container-3{
+        /* display: inline-block; */
+        margin: 20px 40px;
+        width: 80%;
+    }
+
+}
+@media  screen and (max-width:768px){
+
+    .main-container{
+        display: inline;
+        justify-content: space-evenly;
+    }
+    .container-1,.container-2,.container-3 {
+        width: 40%;
+        /* columns: 6; */
+        display: inline-block;
+        /* clear: right; */
+        text-align: center;
+        margin: 10px 180px;
+        
+    }
+    
+    
+    
+
+}
